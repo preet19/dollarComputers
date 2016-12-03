@@ -16,5 +16,22 @@ namespace dollarComputers
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Instantiate the next form
+            OrderForm OrderForm = new OrderForm();
+
+            // show the next form
+            OrderForm.Show();
+
+            // hide this one
+            this.Hide();
+        }
     }
 }
