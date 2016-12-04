@@ -7,6 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ * 	App name = Dollar Computers
+    Author's name = Dilpreet Singh
+    Student	ID = 200306382
+    App	Creation Date = 03/12/2016
+    App description = This program IS configure and order computer system
+ */
+
 
 namespace dollarComputers
 {
