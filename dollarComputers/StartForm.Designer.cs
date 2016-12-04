@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.button1 = new System.Windows.Forms.Button();
-            this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,11 +45,6 @@
             this.button1.Text = "Start a new order";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // SplashFormTimer
-            // 
-            this.SplashFormTimer.Interval = 3000;
-            this.SplashFormTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // button2
             // 
@@ -91,6 +85,7 @@
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -102,7 +97,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer SplashFormTimer;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.PictureBox pictureBox1;

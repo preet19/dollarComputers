@@ -25,14 +25,7 @@ namespace dollarComputers
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            SplashFormTimer.Enabled = false;
-
-            StartForm startForm = new StartForm();
-            startForm.Show();
-            this.Hide();
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {

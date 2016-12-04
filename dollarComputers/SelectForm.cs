@@ -34,7 +34,7 @@ namespace dollarComputers
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,6 +52,11 @@ namespace dollarComputers
 
             // hide this one
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

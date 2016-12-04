@@ -41,5 +41,21 @@ namespace dollarComputers
             // hide this one
             this.Hide();
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the OpenFileDialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Set properties
+           // openFileDialog.InitialDirectory = GetCurrentDirectory();
+            openFileDialog.Title = "Open File";
+            openFileDialog.Filter = "Text Files(*.txt)|*.txt|All Files(*.*)|*.*";
+
+            // Open the Dialog Box by using ShowDialog()
+            DialogResult result = openFileDialog.ShowDialog();
+
+          
+        }
     }
 }
